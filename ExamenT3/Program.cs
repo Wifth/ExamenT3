@@ -1,13 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ExamenT3;
 
+int CantidadCitas;
 byte opcion;
 string regresar;
-
+CitaUtil c = new CitaUtil();
+Cita[] citas = new Cita[10];
 
 do
 {
-    Console.WriteLine("BIENVENIDOS AL SISTEMA DE REGISTRO DE EDADES \n");
     Console.WriteLine("************ MENÚ *************");
     Console.WriteLine("     * 1. Crear      *");
     Console.WriteLine("     * 2. Lista      *");
@@ -25,9 +26,9 @@ do
     switch (opcion)
     {
         case 0: Environment.Exit(0); break;
-        case 1: Crear(); break;
-        case 2: lista(); break;
-        case 3: Modificar(); break;
+        case 1: c.Crear(citas, CantidadCitas); break;
+        case 2: c.lista(citas, CantidadCitas); break;
+        case 3: c.Modificar(citas, CantidadCitas); break;
     }
     Console.Write("\nDesea regresar al menú? [si]: ");
     regresar = Console.ReadLine().ToLower();
