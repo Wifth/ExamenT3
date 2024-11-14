@@ -6,17 +6,28 @@ using System.Threading.Tasks;
 
 namespace ExamenT3
 {
-    internal class CitaUtil
+    public class CitaUtil
     {
-        public static void Crear()
+        static void Crear()
+        {
+            Console.Write("Ingrese el número de cita: ");
+            int n = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese el nombre del estudiante: ");
+            string nombre = Console.ReadLine();
+            Console.Write("Ingrese que enfermedad tiene: ");
+            string enfermedad = Console.ReadLine();
+            Console.Write("Ingrese el código del estudiante");
+            string codigo = Console.ReadLine();
+            Console.Write("Ingrese la universidad del estudiante: ");
+            string universidad = Console.ReadLine();
+            Console.Write("Ingrese el precio de la cita: ");
+            int precio = int.Parse(Console.ReadLine());
+        }
+        static void Lista()
         {
 
         }
-        public static void Lista()
-        {
-
-        }
-        public static void Modificar()
+        static void Modificar()
         {
 
         }
