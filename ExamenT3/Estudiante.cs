@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExamenT3
 {
-    internal class Estudiante
+    public class Estudiante
     {
         public int Codigo { get; set; }
         public string Nombre { get; set; }
