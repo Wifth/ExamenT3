@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ExamenT3;
 
+int CantidadCitas;
 byte opcion;
 string regresar;
-CitaUtil c = new CitaUtil();
 
 do
 {
@@ -25,9 +25,9 @@ do
     switch (opcion)
     {
         case 0: Environment.Exit(0); break;
-        case 1: c.Crear(); break;
-        case 2: c.Lista(); break;
-        case 3: c.Modificar(); break;
+        case 1: Crear(); break;
+        case 2: lista(); break;
+        case 3: Modificar(); break;
     }
     Console.Write("\nDesea regresar al menú? [si]: ");
     regresar = Console.ReadLine().ToLower();

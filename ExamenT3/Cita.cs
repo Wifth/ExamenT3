@@ -12,9 +12,16 @@ namespace ExamenT3
         public Estudiante Estudiante { get; set; }
         public string Enfermedad { get; set; }
         public double Precio { get; set; }
-        public void ToString()
+        public Cita(int numero, Estudiante estudiante, string enfermedad, double precio)
         {
-
+            Numero = numero;
+            Estudiante = estudiante;
+            Enfermedad = enfermedad;
+            Precio = precio;
+        }
+        public override string ToString()
+        {
+            return $"Número: {Numero}, Enfermedad: {Enfermedad}, Estudiante: {Estudiante.Nombre}, Universidad: {Estudiante.Universidad}, Precio: {Precio:C}";
         }
     }
 }
